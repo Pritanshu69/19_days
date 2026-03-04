@@ -14,7 +14,7 @@ int main(){
         if(i>reachable){
             cout<<"false"<<endl;
             return 0;
-        }
+        }   
         if(i+arr[i]>reachable){
             reachable=i+arr[i];
         }
