@@ -25,13 +25,14 @@ bool isRepeat(int n){
 int main(){
     int L,R;
     cin>> L >> R;
-    bool flag=false;
+    int count=0;
     for(int i=L;i<=R;i++){
         if(i%7==0 && i%5 != 0 && !isPalindrome(i) && !isRepeat(i)){
             cout<<i <<" ";
-            flag=true;
+            count+=1;
         }
     }
-    if(!flag) cout<<-1;
-    return 0;
+    if(count==0){
+        cout<<-1;
+    }
 }
