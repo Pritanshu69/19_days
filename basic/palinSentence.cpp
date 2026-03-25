@@ -12,7 +12,7 @@ int main(){
             left++;
             continue;
         }
-        if(str[right]==' '){
+        if(!isallnum(str[right])){
             right--;
             continue;
         }
